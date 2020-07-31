@@ -1,7 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import store from './redux'
+import Baseball from './components/Baseball'
 
 ReactDOM.render(
-    <h1>Hello World</h1>,
+    <Provider store={store}>
+        <Baseball />
+    </Provider>,
     document.getElementById('app')
 )

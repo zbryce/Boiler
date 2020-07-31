@@ -4,9 +4,9 @@ module.exports = router
 
 //after /api
 
-router.use('/politics', require('./politics'))
+router.use('/american', require('./american'))
 
-router.use('/sports', require('./sports'))
+router.use('/national', require('./national'))
 
 
 router.use(function (req, res, next) {
