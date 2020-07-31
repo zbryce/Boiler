@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server",
     "start-dev": "webpack -w & nodemon server/index.js",
-    "start-webpack": "webpack -w"
+    "deploy": "script/deploy",
+    "start-webpack": "webpack -w",
+    "seed": "node seed.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +18,9 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "express-logger": "0.0.3",
+    "express-session": "^1.17.1",
     "morgan": "^1.10.0",
+    "passport": "^0.4.1",
     "path": "^0.12.7",
     "pg": "^8.3.0",
     "pg-hstore": "^2.3.3",
